@@ -20,7 +20,12 @@ export default class Header extends React.Component {
 
   static navigationOptions = ({navigation}) => {
     return {
-      title: navigation.state.params.title || '无'
+      headerTitle: navigation.state.params.title || '无',
+      headerBackTitle: null,
+      headerTitleStyle: {
+        alignSelf: 'center'
+      },
+      headerRight: <View style={{width: 20, height: 20, backgroundColor: 'red'}} />
     }
   };
 
