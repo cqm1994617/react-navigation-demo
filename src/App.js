@@ -24,6 +24,7 @@ class App extends React.Component {
 
   static navigationOptions = {
     title: 'Navigation Demo',
+    headerBackTitle: '主页'
   };
 
   jumpTo = (pages, params) => () => {
@@ -39,8 +40,8 @@ class App extends React.Component {
         contentContainerStyle={styles.inner}
       >
         <Button text="跳转传参" onPress={this.jumpTo('Params', {title: '我是参数！'})}/>
-        <Button text="样式不同的导航栏" onPress={this.jumpTo('Header')}/>
-        <Button text="ios/android导航栏通用" onPress={this.jumpTo('CustomizeNavBar')}/>
+        <Button text="样式稍微不同的导航栏" onPress={this.jumpTo('Header')}/>
+        <Button text="多级返回" onPress={this.jumpTo('Back')}/>
       </ScrollView>
     )
   }
