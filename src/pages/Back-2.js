@@ -44,7 +44,7 @@ export default class Back extends React.Component {
 
   next = () => {
     this.props.navigation.navigate('Back3', {
-      backKey: this.props.navigation.state.params.backKey
+      backKey: this.props.navigation.state.key
     });
   };
 

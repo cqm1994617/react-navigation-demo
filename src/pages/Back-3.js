@@ -26,7 +26,6 @@ export default class Back extends React.Component {
   };
 
   reBack = () => {
-    console.log(this.props.navigation);
     /*this.props.navigation.dispatch({
       type: 'Navigation/RESET',
       index: 0,
