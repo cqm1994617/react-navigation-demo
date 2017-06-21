@@ -52,4 +52,10 @@ const Routes = StackNavigator({
   ...routes
 });
 
-export default Routes;
+console.log(Routes)
+
+export default () => (
+  <Routes
+    onNavigationStateChange={(prevState, currentState) => console.log(prevState, currentState)}
+  />
+);
